@@ -1,0 +1,148 @@
+﻿<UserControl x:Class="GestionConferencias.Views.Conferencistas.RegisterLecturers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GestionConferencias.Views.Conferencistas"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1500">
+
+    <Grid Background="Transparent" Width="500" 
+          Height="700" HorizontalAlignment="Center"
+          VerticalAlignment="Bottom"
+          Margin="500,0,150,40">
+        <Border Background="red" CornerRadius="20"/>
+        <Border Background="Black" CornerRadius="100,20,100,20"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="1" Grid.Column="1"
+                   Grid.ColumnSpan="2" Content="REGISTRO"
+                   Foreground="White" FontSize="40"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"/>
+            <!--#region labels-->
+
+            <Label Grid.Row="2" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Nombres: "/>
+            <Label Grid.Row="3" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Apellido Paterno: "/>
+            <Label Grid.Row="4" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Apellido Materno: "/>
+            <Label Grid.Row="5" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Nacimiento: "/>
+            <Label Grid.Row="6" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Profesion: "/>
+            <Label Grid.Row="7" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Frase: "/>
+            <Label Grid.Row="8" Grid.Column="1"
+                   Foreground="White" FontSize="25"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Content="Genero: "/>
+            <!--#endregion-->
+            
+            <!--#region Entradas-->
+
+            <TextBox x:Name="txtFirstName" Grid.Row="2"
+                     Grid.Column="2" FontSize="20"
+                     Height="40" Foreground="White"
+                     BorderThickness="0,0,1,1"
+                     BorderBrush="White"/>
+            <TextBox x:Name="txtLastName" Grid.Row="3"
+                     Grid.Column="2" FontSize="20"
+                     Height="40" Foreground="White"
+                     BorderBrush="White"
+                     BorderThickness="0,0,1,1"/>
+            <TextBox x:Name="txtSecLastName" Grid.Row="4"
+                     Grid.Column="2" FontSize="20"
+                     Height="40" Foreground="White"
+                     BorderThickness="0,0,1,1"
+                     BorderBrush="White"/>
+            <DatePicker Name="txtBirthDate" Grid.Row="5"
+                        Grid.Column="2" FontSize="20"
+                        Height="40" Foreground="Black"
+                        Background="White"
+                        BorderThickness="0,0,1,1"/>
+            <TextBox x:Name="txtProfession" Grid.Row="6"
+                     Grid.Column="2" FontSize="20"
+                     Height="40" Foreground="White"
+                     BorderThickness="0,0,1,1"
+                     BorderBrush="White"/>
+            <TextBox x:Name="txtPhrase" Grid.Row="7"
+                     Grid.Column="2" FontSize="20"
+                     Height="40" Foreground="White"
+                     BorderThickness="0,0,1,1"
+                     BorderBrush="White"/>
+            <ComboBox Name="cmbGender" Grid.Row="8"
+                      Grid.Column="2" FontSize="20"
+                      Height="40" Foreground="White"
+                      BorderThickness="0,0,1,1"
+                      BorderBrush="White">
+                <ComboBoxItem Content="M" FontWeight="Bold"
+                              FontSize="20" Foreground="Black"/>
+                <ComboBoxItem Content="F" FontWeight="Bold"
+                              FontSize="20" Foreground="Black"/>
+
+
+            </ComboBox>
+            <!--#endregion-->
+            
+            <!--#region Botones-->
+            <Grid Grid.Row="9" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnCancel" Grid.Row="0"
+                    Grid.Column="0" Content="Cancelar"
+                        Click="btnCancel_Click"/>
+                <Button x:Name="btnRegister" Grid.Row="0"
+                        Grid.Column="2" Content="Registrar"
+                        Click="btnRegister_Click"/>
+            </Grid>
+            <!--#endregion-->
+        </Grid>
+
+    </Grid>
+
+
+</UserControl>

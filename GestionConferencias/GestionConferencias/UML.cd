@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Model">
+    <Position X="9.25" Y="1.25" Height="0.331" Width="0.741" />
+  </Comment>
+  <Comment CommentText="Controller">
+    <Position X="3.27" Y="0.552" Height="0.331" Width="0.984" />
+  </Comment>
+  <Class Name="GestionConferencias.Controllers.BaseController">
+    <Position X="3" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAABAAAAAACAABAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestionConferencias.Controllers.ConferencesController">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAABAAAAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Controllers\ConferencesController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GestionConferencias.Controllers.LecturerController">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAABAAAAAAAgAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Controllers\LecturerController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GestionConferencias.Controllers.UserPersonController">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\UserPersonController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestionConferencias.Model.Conferences">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAggEAAQAAIAAAAIIQgAAAAAAAEAEAAAAA=</HashCode>
+      <FileName>Models\Conferences.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestionConferencias.Model.Lecturer">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAIgICAAAAAAAQAAAAAAAAAAAAgAAEAAAg=</HashCode>
+      <FileName>Models\Lecturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestionConferencias.Model.UserPerson">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAgAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UserPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GestionConferencias.Controllers.BaseInterface&lt;T&gt;">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Controllers\BaseInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
